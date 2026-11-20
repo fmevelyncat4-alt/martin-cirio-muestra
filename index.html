@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Martín Cirio - La Faraona</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(25, 22, 42);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: rgb(240, 235, 250);
+}
+
+header {
+  background-color: rgb(18, 15, 32);
+  padding: 10px 20px;
+}
+
+nav {
+  background-color: rgb(18, 15, 32);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.navbar-nav li a {
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.navbar-nav li a:hover {
+  background-color: rgb(168, 45, 130);
+  color: white;
+}
+
+h1 {
+  color: rgb(245, 110, 195);
+  margin-top: 35px;
+  font-size: 40px;
+}
+
+h2 {
+  color: rgb(195, 165, 255);
+  margin-top: 30px;
+  font-size: 28px;
+}
+
+p {
+  color: rgb(225, 220, 238);
+  font-size: 19px;
+  padding: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+a {
+  color: rgb(245, 110, 195);
+  font-size: 19px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Imágenes de cada sección */
+.img-seccion {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+  margin: 18px auto;
+  border-radius: 14px;
+}
+
+/* Carrusel de Bootstrap */
+.carousel {
+  width: 100%;
+  max-width: 1000px;
+  margin: 25px auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 65vh;
+  object-fit: contain;
+  background-color: rgb(14, 12, 24);
+  border-radius: 16px;
+}
+
+/* Clase 12: Estilos base para imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Clase 12: Galería con Flexbox */
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  max-width: 1000px;
+}
+
+.galeria img {
+  width: 30%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Clase 12: Media Query para celulares */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .img-seccion {
+    max-width: 100%;
+  }
+
+  .carousel-item img {
+    height: 40vh;
+  }
+
+  .galeria {
+    flex-direction: column;
+  }
+
+  .galeria img {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Menú principal">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#Inicio">Martín Cirio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarsExample05"
+        aria-controls="navbarsExample05"
+        aria-expanded="false"
+        aria-label="Alternar navegación"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Inicio">Quién es</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#AntesDeYouTube">Antes de YouTube</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Polemicas">Polémicas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#CancionesConciertos">Canciones y Conciertos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Galeria">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Seguridad">Seguridad Informática</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h1 id="Inicio">Martín Cirio ("La Faraona")</h1>
+  <p>
+    Martín Cirio es un creador de contenido, con buen humor, streamer y "cantante" argentino, es popularmente conocido en redes sociales como "La Faraona". Se ganó un público fiel por su humor ácido, sus historias del dia a dia, sus transmisiones en vivo y su estilo sin FILTROS.
+  </p>
+
+  <!-- Carrusel de imágenes -->
+  <div id="carouselMartinCirio" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZNjEZaMwgeCi8qUwrCOy9IQsYMtHfoIwVF8tAvLCJ2A&s=10" class="d-block w-100" alt="Martín Cirio en show o presentación en vivo">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnT-fTAJDxO5Kb_L4eSJ7McsLbWJHPvz8kr2JyyX2d0Q&s" class="d-block w-100" alt="Martín Cirio durante una transmisión o evento">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkeJs3QgjCfC4wKkcVvqyuChdqRsGOMtsWh9SFBQohQw&s=10" class="d-block w-100" alt="Retrato promocional de Martín Cirio">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMartinCirio" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselMartinCirio" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <!-- Vida antes de YouTube -->
+  <h1 id="AntesDeYouTube">Vida antes de YouTube</h1>
+  <p>
+    Antes de volverse masivo en internet, Martín estudió y trabajó como profesor de inglés, además de escribir en blogs personales como "Mariconadas". También vivió un tiempo en el exterior, incluyendo una etapa en Egipto —de donde nació el apodo "La Faraona"— y experiencias que luego nutrieron muchas de sus anécdotas.
+  </p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmAdxeb4Oy7MNnOg4mt62HnfLUG60w20epaqoLx5m50g&s=10" class="img-seccion" alt="Foto de archivo de Martín Cirio antes de su etapa masiva en YouTube">
+
+  <!-- Polémicas y trayectoria -->
+  <h1 id="Polemicas">Polémicas y trayectoria</h1>
+  <p>
+    A lo largo de su carrera en redes atravesó debates y momentos de fuerte exposición mediática, incluyendo la cancelación en 2020 (despues de la cancelacion habla de las muchas personas que le "soltaron la mano" habla de cuando nadie salia a defenderlo) a raíz de viejos tuits de humor negro y el posterior proceso judicial en el que fue sobreseído. Con el tiempo retomó su actividad digital y consolidó su comunidad en formatos de streaming en vivo.
+  </p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB9IqatiMilb41Chu-wgiPy-MWW6H_MCQvYuShUIiFlQ&s=10" class="img-seccion" alt="Imagen ilustrativa sobre exposición mediática y trayectoria en redes sociales">
+
+  <!-- Canciones y conciertos -->
+  <h1 id="CancionesConciertos">Canciones y conciertos</h1>
+  <p>
+    Además de su faceta humorística y de streaming, lanzó canciones y parodias musicales propias (como Mani for Supermarket o temas ligados a su personaje) y realizó shows y presentaciones en vivo en escenarios y teatros ante su público.
+  </p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fuP_JSGJvUW93PbuVxxhy_qG_WyPoUqUPuy_gxrnWQ&s=10" class="img-seccion" alt="Escenario y luces de presentación musical y shows en vivo">
+
+  <!-- Clase 12: Galería con Flexbox -->
+  <h2 id="Galeria">Galería de imágenes</h2>
+  <div class="galeria">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbKbuiRKkv9aS3cgFu7p7cNkCSQqgwecs5vW75mhjDNg&s=10" alt="Martín Cirio en show o presentación en vivo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaYvvR1DazKgFhEYH1LyHLCQUBHs6HgaM0APXImSbvrg&s=10" alt="Martín Cirio durante una transmisión o evento">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-bUjMRCizvRHHJ-GhbV0aumgWVmcag4JbVjeYqllWA&s=10" alt="Retrato promocional de Martín Cirio">
+  </div>
+
+  <!-- Seguridad Informática -->
+  <h1 id="Seguridad">Seguridad informática y cuidado en redes</h1>
+  <p>
+    Para cualquier creador de contenido o usuario de internet, la seguridad informática es clave. Los virus y distintos tipos de malware (como troyanos, spyware o ransomware) pueden infectar equipos mediante archivos dudosos o enlaces falsos, mientras que el phishing busca robar contraseñas y cuentas. Cuidar los datos personales, usar contraseñas seguras y activar la autenticación en dos pasos ayuda a proteger la identidad digital.
+  </p>
+  <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQGnK9y-T24Hq7lJv0KH1A58RhmoaaE0ytyAsIaZAQSzWs-ycVnQH4dFCFbUZYbTy0qh98rOtfZoEA4jLk" class="img-seccion" alt="Ilustración sobre seguridad informática y protección de datos personales">
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
